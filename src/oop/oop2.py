@@ -21,11 +21,13 @@ class GroundVehicle():
 
 # TODO
 class Motorcycle(GroundVehicle):
-	def __init__(self, num_wheels=2):
-		GroundVehicle.__init__(self, num_wheels)
-
-	def drive(self):
-		return "BRAAAP!!"
+    def __init__(self, num_wheels=2):
+        #so many ways to call
+        super(Motorcycle, self).__init__(num_wheels)
+        #GroundVehicle.__init__(self, num_wheels)
+    
+    def drive(self):
+        return "BRAAAP!!"
 
 vehicles = [
     GroundVehicle(),
