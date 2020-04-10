@@ -20,6 +20,7 @@
 
 # MARK: -- Base class
 class Vehicle:
+	def __init__(self):
 		pass
 
 # MARK: -- Subclass of Vehicle
